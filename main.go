@@ -15,7 +15,7 @@ func main() {
 	// Get target URL from environment variable or fallback
 	target := os.Getenv("TARGET_URL")
 	if target == "" {
-		target = "http://yamabiko.proxy.rlwy.net:36864"
+		target = "https://recipe-mailer-backend-production.up.railway.app"
 	}
 
 	targetURL, err := url.Parse(target)
